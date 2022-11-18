@@ -89,10 +89,10 @@ export default function Experience(){
     </EffectComposer>
      <OrbitControls makeDefault enableZoom={true} maxPolarAngle={Math.PI * .5}/>
     {/* <Sky distance={450000} sunPosition={[0, .1, 0]} inclination={0} azimuth={0.025}/> */}
-    <color args={ ['#ffffff']} attach={'background'} />
+    {backG &&<color args={ ['#ffffff']} attach={'background'} />}
 
     
-   {backG && <Environment
+   {/* {backG && <Environment
     background
             files={ [
                 './rs.jpeg',
@@ -102,7 +102,7 @@ export default function Experience(){
                 './rs.jpeg',
                 './rs.jpeg',
             ] }
-        />}
+        />} */}
 
     <Float>
          <Text
@@ -115,8 +115,8 @@ export default function Experience(){
         position={ [ 3.75, 10.65, 0 ] }
         
         className="title"
-        onPointerOver={() => setHovered(true)}
-         onPointerOut={() => setHovered(false)}
+        // onPointerOver={() => setHovered(!hovered)}
+        //  onPointerOut={() => setHovered(false)}
          onClick={()=>setbackG(!backG) }
         >
           {' birbFoggyForest'.toUpperCase()}
