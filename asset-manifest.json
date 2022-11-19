@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/birbFoggyForest/static/css/main.2481e1e9.css",
-    "main.js": "/birbFoggyForest/static/js/main.ff40e6ed.js",
-    "index.html": "/birbFoggyForest/index.html",
-    "main.2481e1e9.css.map": "/birbFoggyForest/static/css/main.2481e1e9.css.map",
-    "main.ff40e6ed.js.map": "/birbFoggyForest/static/js/main.ff40e6ed.js.map"
+    "main.css": "./static/css/main.2481e1e9.css",
+    "main.js": "./static/js/main.761d297e.js",
+    "index.html": "./index.html",
+    "main.2481e1e9.css.map": "./static/css/main.2481e1e9.css.map",
+    "main.761d297e.js.map": "./static/js/main.761d297e.js.map"
   },
   "entrypoints": [
     "static/css/main.2481e1e9.css",
-    "static/js/main.ff40e6ed.js"
+    "static/js/main.761d297e.js"
   ]
 }
