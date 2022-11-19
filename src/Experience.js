@@ -79,6 +79,8 @@ export default function Experience(){
     return<>
     {/* <Perf position="top-left" /> */}
     <EffectComposer >
+
+        
     
     <Fog 
     ref={ fogRef }
@@ -109,17 +111,15 @@ export default function Experience(){
         
         font="./Art Dystopia 2.otf"
         scale={ 40 }
-        maxWidth={ 0.25 }
-        lineHeight={ 0.75 }
-        textAlign="right"
-        position={ [ 3.75, 10.65, 0 ] }
+        rotation-y={  0.25 }
+        position={ [ .75, 10.65, 0 ] }
         
         className="title"
         // onPointerOver={() => setHovered(!hovered)}
         //  onPointerOut={() => setHovered(false)}
          onClick={()=>setbackG(!backG) }
         >
-          {' birbFoggyForest'.toUpperCase()}
+          {' birb Foggy Forest'.toUpperCase()}
           <meshBasicMaterial color="#f3172d" toneMapped={false}
           
           />
