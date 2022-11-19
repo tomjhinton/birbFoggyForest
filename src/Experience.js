@@ -1,10 +1,10 @@
-import { Sky, useGLTF, Text, Float, Environment } from "@react-three/drei"
+import {  useGLTF, Text, Float } from "@react-three/drei"
 import { OrbitControls , shaderMaterial, Center} from '@react-three/drei'
 import { EffectComposer } from '@react-three/postprocessing'
 import { useRef , useEffect, useState, useMemo} from "react"
 import { BlendFunction } from 'postprocessing'
 import { Perf } from "r3f-perf"
-
+import * as THREE from 'three'
 
 import Tree from "./Tree.js"
 import Rock from "./Rock.js"
@@ -93,18 +93,8 @@ export default function Experience(){
     {/* <Sky distance={450000} sunPosition={[0, .1, 0]} inclination={0} azimuth={0.025}/> */}
     {backG &&<color args={ ['#ffffff']} attach={'background'} />}
 
+
     
-   {/* {backG && <Environment
-    background
-            files={ [
-                './rs.jpeg',
-                './rs.jpeg',
-                './rs.jpeg',
-                './rs.jpeg',
-                './rs.jpeg',
-                './rs.jpeg',
-            ] }
-        />} */}
 
     <Float>
          <Text
@@ -121,7 +111,7 @@ export default function Experience(){
         >
           {' birb Foggy Forest'.toUpperCase()}
           <meshBasicMaterial color="#f3172d" toneMapped={false}
-          
+          side={THREE.DoubleSide}
           />
         </Text>
         </Float>
