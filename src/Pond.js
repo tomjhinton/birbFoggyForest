@@ -17,6 +17,7 @@ const WaterMaterial = shaderMaterial(
 extend({WaterMaterial})
 
 export default function Pond(){
+   
     const waterMaterial = useRef()
     useFrame((state, delta) => {
         waterMaterial.current.uTime += delta

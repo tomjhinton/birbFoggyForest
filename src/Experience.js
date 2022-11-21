@@ -15,13 +15,10 @@ import Fog  from './Fog.js'
 export default function Experience(){
 
     const fogRef = useRef()
-    const [hovered, setHovered] = useState(false)
     const [backG, setbackG] = useState(false)
    
 
-    useEffect(() => {
-        document.body.style.cursor = hovered ? 'pointer' : 'auto'
-      }, [hovered])
+    
 
 
 
@@ -105,8 +102,10 @@ export default function Experience(){
         position={ [ .75, 10.65, 0 ] }
         
         className="title"
-        // onPointerOver={() => setHovered(!hovered)}
-        //  onPointerOut={() => setHovered(false)}
+        
+        onPointerOver={ ()=>  document.body.style.cursor = 'pointer'
+        }
+         onPointerOut={()=>  document.body.style.cursor = 'auto'}
          onClick={()=>setbackG(!backG) }
         >
           {' birb Foggy Forest'.toUpperCase()}
